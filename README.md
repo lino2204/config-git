@@ -121,3 +121,52 @@ You can see the history of your commits with:
 ```bash
 git log
 ```
+
+## Working with Remotes
+
+You need to know how to manage your remote repositories. Remote repositories are versions of your project that are hosted on the Internet or network somewhere.
+
+Collaborating with others involves managing these remote repositories and pushing and pulling data to and from them when you need to share work.
+
+### Showing your remotes
+
+To see which remote servers you have configured, you can run the ```git remote``` command. It lists the shortnames of each remote handle you’ve specified. If you’ve cloned your repository, you should at least see ```origin``` — that is the default name Git gives to the server you cloned from
+
+You can also specify -v, which shows you the URLs that Git has stored for the shortname to be used when reading and writing to that remote. But we are using SSH keys so you will see
+
+```bash
+$ git remote -v
+origin git@github:user/project.git (fetch)
+origin git@github:user/project.git (push)
+```
+
+You have specific remotes for each project
+
+### Adding Remote Repositories
+
+You can add new remote Git repository with the following command
+
+```bash
+git remote add <shortname> <url>
+```
+
+
+### Fetching and pulling from your remotes
+
+To get data from your remotes projects, you can run:
+
+```bash
+git fetch <url>
+```
+
+It’s important to note that the ```git fetch``` command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. You have to merge it manually into your work when you’re ready.
+
+You can use the ```git pull``` command to automatically fetch and then merge that remote branch into your current branch.
+
+### Pushing to your remotes
+
+The command for this is simple
+
+```bash
+git push <remote> <branch>
+```
