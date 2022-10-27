@@ -93,3 +93,31 @@ You can see if your file is untracked with the following command
 ```bash
 git status
 ```
+
+## Commits
+
+You can track your files adding the file to staging stage
+
+```bash
+git add test.txt
+```
+
+If you see the status of your file, you will see that it is ready to be committed.
+
+You can commit your file sending the following command with a message
+
+```bash
+git commit -m "Commit Test"
+```
+
+You can track your files and commit with:
+
+```bash
+git commit -am "Commit Test"
+```
+
+You can see the history of your commits with:
+
+```bash
+git log
+```
