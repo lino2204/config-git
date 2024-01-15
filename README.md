@@ -15,11 +15,11 @@ To generate keys with need to execute the following command
 ssh-keygen -t rsa -b 2048
 ```
 
-Save in the .ssh directory
+This will save the keys in the .ssh directory
 
-Then you have yo add the public keys to Github or Gitlab
+Then you have to add the public keys to Github or Gitlab account
 
-Next you need to register the SSH keys locally
+Next you need to register the private SSH key locally
 
 ```bash
 ssh-add ./id_rsa_github
