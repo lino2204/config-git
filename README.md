@@ -122,6 +122,12 @@ You can see the history of your commits with:
 git log
 ```
 
+You can see changes with between commits with:
+
+```bash
+git diff
+```
+
 ## Working with Remotes
 
 You need to know how to manage your remote repositories. Remote repositories are versions of your project that are hosted on the Internet or network somewhere.
