@@ -70,38 +70,15 @@ git config user.email "johndoe@example.com"
 
 This commands is necessary for
 
-| Command            | Description                             |
-| :--------          | :-------                                |
-| `git init`         | `Initiate the repository`               |
-| `git status`       | `See if your file is untracked`         |
-| `git add <file>`   | `Track files adding to staging stage`   |
+| Command                     | Description                             |
+| :--------                   | :-------                                |
+| `git init`                  | `Initiate the repository`               |
+| `git status`                | `See if your file is untracked`         |
+| `git add <file>`            | `Track files adding to staging stage`   |
+| `git commit -m <message>`   | `Commit your file`                      |
+| `git log`                   | `History of commits`                    |
+| `git diff`                  | `See changes between commits`           |
 
-
-If you see the status of your file, you will see that it is ready to be committed.
-
-You can commit your file sending the following command with a message
-
-```bash
-git commit -m "Commit Test"
-```
-
-You can track your files and commit with:
-
-```bash
-git commit -am "Commit Test"
-```
-
-You can see the history of your commits with:
-
-```bash
-git log
-```
-
-You can see changes with between commits with:
-
-```bash
-git diff
-```
 
 ## Working with Remotes
 
@@ -151,3 +128,13 @@ The command for this is simple
 ```bash
 git push <remote> <branch>
 ```
+
+| Command                                          | Description                          |
+| :--------                                        | :-------                             |
+| `git checkout -b <branch-name>`                  | `Create new branch and swith to it`  |
+| `git branch <branch-name>`                       | `Create a branch`                    |
+| `git checkout <branch-name>`                     | `Swith to branch`                    |
+| `git push -u origin <branch-name>`               | `Pushing a new branch to remote`     |
+| `git branch`                                     | `See branches`                       |
+| `git branch -d <branch-name>`                    | `Delete branch`                      |
+| `git push <remote_name> --delete <branch_name>`  | `Delete remote branch`               |
