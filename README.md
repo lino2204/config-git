@@ -68,39 +68,14 @@ git config user.email "johndoe@example.com"
 
 ## Initial commands
 
-Follow this commands to configure your repository
+This commands is necessary for
 
-```bash
-mkdir Docs
-cd Docs
-```
+| Command            | Description                             |
+| :--------          | :-------                                |
+| `git init`         | `Initiate the repository`               |
+| `git status`       | `See if your file is untracked`         |
+| `git add <file>`   | `Track files adding to staging stage`   |
 
-We are going to initiate the repository
-
-```bash
-git init
-```
-You'll see a "master" or "main" in the end of your current directory.
-
-Create a file
-
-```bash
-touch test.txt
-```
-
-You can see if your file is untracked with the following command
-
-```bash
-git status
-```
-
-## Commits
-
-You can track your files adding the file to staging stage
-
-```bash
-git add test.txt
-```
 
 If you see the status of your file, you will see that it is ready to be committed.
 
